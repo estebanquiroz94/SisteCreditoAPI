@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SisteCredito.ManagementAPI", "SisteCredito.ManagementAPI\SisteCredito.ManagementAPI.csproj", "{E00F93EE-06A3-47DB-B6B1-937AAE3E7EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E00F93EE-06A3-47DB-B6B1-937AAE3E7EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00F93EE-06A3-47DB-B6B1-937AAE3E7EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00F93EE-06A3-47DB-B6B1-937AAE3E7EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00F93EE-06A3-47DB-B6B1-937AAE3E7EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFD919ED-4167-4658-AC7A-E644D99BF08F}
+	EndGlobalSection
+EndGlobal
