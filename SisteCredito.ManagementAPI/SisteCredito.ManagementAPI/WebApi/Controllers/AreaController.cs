@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace SisteCredito.ManagementAPI.WebApi.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AreaController : ControllerBase

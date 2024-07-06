@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using SisteCredito.ManagementAPI.Application.Dto;
@@ -7,6 +8,7 @@ using SisteCredito.ManagementAPI.Domain.Models;
 
 namespace SisteCredito.ManagementAPI.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
