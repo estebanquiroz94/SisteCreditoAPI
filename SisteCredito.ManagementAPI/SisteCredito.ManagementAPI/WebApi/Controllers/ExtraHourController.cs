@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SisteCredito.ManagementAPI.Application.Interfaces;
 using SisteCredito.ManagementAPI.Domain.Models;
 
 namespace SisteCredito.ManagementAPI.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ExtraHourController : ControllerBase

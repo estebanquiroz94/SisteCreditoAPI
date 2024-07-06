@@ -24,27 +24,27 @@ namespace SisteCredito.ManagementAPI.Application.Services
 
         public async Task<IEnumerable<Area>> GetAll()
         {
-            return await _repository.GetAllAsync();
+            return await _repository.GetAll();
         }
 
         public async Task<Area> GetById(int id)
         {
-            return await _repository.GetByIdAsync(id);
+            return await _repository.GetById(id);
         }
 
         public async Task Add(Area area)
         {
-            await _repository.AddAsync(area);
+            await _repository.Add(area);
         }
 
         public async Task Update(Area area)
         {
-            await _repository.UpdateAsync(area);
+            await _repository.Update(area);
         }
 
         public async Task Delete(int id)
         {
-            await _repository.DeleteAsync(id);
+            await _repository.Delete(id);
         }
 
         public async Task<bool> Homologate(IFormFile file)
@@ -89,13 +89,13 @@ namespace SisteCredito.ManagementAPI.Application.Services
                             SetAreaFields(headerRow, row, areasDTO, j);
                         }
                     }
-                    var employees = await _repositoryEmployee.GetAllAsync();
+                    var employees = await _repositoryEmployee.GetAll();
 
                     areasDTO.IdHumangestor = employees.Where(x => x.Document == areasDTO.HumanGestorDocument).Select(x => x.Id).FirstOrDefault();
                     areasDTO.IdSupervisor = employees.Where(x => x.Document == areasDTO.SupervisorDocument).Select(x => x.Id).FirstOrDefault();
 
                     var area = _mapper.Map<Area>(areasDTO);
-                    await _repository.AddAsync(area);
+                    await _repository.Add(area);
                 }
                 else { break; }
             }

@@ -22,34 +22,29 @@ namespace SisteCredito.ManagementAPI.Application.Services
 
         public async Task<IEnumerable<EmployeeDTO>> GetAll()
         {
-            var employees = await _repository.GetAllAsync();
+            var employees = await _repository.GetAll();
             return _mapper.Map<List<EmployeeDTO>>(employees);
         }
 
         public async Task<EmployeeDTO> GetById(int id)
         {
-            var employee = await _repository.GetByIdAsync(id);
-            return _mapper.Map<EmployeeDTO>(employee);
-        }
-        public async Task<EmployeeDTO> GetEmployeeByDocumentsAsync(List<int> documents)
-        {
-            var employee = await _repository.GetByDocumentsAsync(documents);
+            var employee = await _repository.GetById(id);
             return _mapper.Map<EmployeeDTO>(employee);
         }
         public async Task Add(EmployeeDTO employee)
         {
 
-            await _repository.AddAsync(_mapper.Map<Employee>(employee));
+            await _repository.Add(_mapper.Map<Employee>(employee));
         }
 
         public async Task Update(EmployeeDTO employee)
         {
-            await _repository.UpdateAsync(_mapper.Map<Employee>(employee));
+            await _repository.Update(_mapper.Map<Employee>(employee));
         }
 
         public async Task Delete(int id)
         {
-            await _repository.DeleteAsync(id);
+            await _repository.Delete(id);
         }
 
         public async Task<bool> Homologate(IFormFile file)
@@ -83,7 +78,7 @@ namespace SisteCredito.ManagementAPI.Application.Services
                     if (employee != null)
                     {
                         employee.IdSupervisor = idSupervisor;
-                        await _repository.UpdateAsync(employee);
+                        await _repository.Update(employee);
                     }
                 }
 
@@ -108,7 +103,7 @@ namespace SisteCredito.ManagementAPI.Application.Services
                         }
                     }
                     var employee = _mapper.Map<Employee>(employeeDTO);
-                    await _repository.AddAsync(employee);
+                    await _repository.Add(employee);
 
 
                     employeesDTO.Add(employeeDTO);

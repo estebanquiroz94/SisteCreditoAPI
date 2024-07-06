@@ -6898,11 +6898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal\\Prueba Tecnica TBT Global\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI.csproj",
+      "projectUniqueName": "D:\\Personal\\Prueba Técnica Sistecrédito\\SisteCreditoAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI.csproj",
       "projectName": "SisteCredito.ManagementAPI",
-      "projectPath": "D:\\Personal\\Prueba Tecnica TBT Global\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI.csproj",
+      "projectPath": "D:\\Personal\\Prueba Técnica Sistecrédito\\SisteCreditoAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI.csproj",
       "packagesPath": "C:\\Users\\Juan Esteban\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal\\Prueba Tecnica TBT Global\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\obj\\",
+      "outputPath": "D:\\Personal\\Prueba Técnica Sistecrédito\\SisteCreditoAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

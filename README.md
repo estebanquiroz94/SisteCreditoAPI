@@ -10,6 +10,9 @@ Prueba técnica
 7. Se implentó proceso de Autenticación mediante Bearer Token, el cual se obtiene desde la petición "GetToken" con los valores brindados. Actualmente se hace la autenticación contra los valores del Appsettings.
 8. Para la autenticación se puede modificar el tiempo (minutos) de expiración del token en la propiedad Authentication:TokenConfiguration:Expire  
 9. Se suministra archivo excel con 2 pestañas con los datos base para la homologación de datos. Adjunto en correo electrónico.
+10 Usuario y contraseña cifrada para generar token
+JuaQui
+jH6tpvNICok1N30gprgEFA==
 
 PENDIENTES
 1. Implementación de pruebas unitarias

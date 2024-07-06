@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eQcX7xh21rjXXEXSkNB82eN4flw1x7PYfkg4o1A5s7ngI80XuoOaQrcsBeB6RsQCbVN4pbpeke+SQxlNopollg==",
+  "dgSpecHash": "BRAp9xr9qLH0KdWuQB2JAwULBrkTDovAptMeHwW4G5MyVoW/ozz4VSfmObgxPaFTvn4qH2RjdlOU5eKfzY8oig==",
   "success": true,
-  "projectFilePath": "D:\\Personal\\Prueba Tecnica TBT Global\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI.csproj",
+  "projectFilePath": "D:\\Personal\\Prueba Técnica Sistecrédito\\SisteCreditoAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI\\SisteCredito.ManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juan Esteban\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Juan Esteban\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",

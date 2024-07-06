@@ -15,29 +15,29 @@ namespace SisteCredito.ManagementAPI.Application.Services
 
         public async Task<IEnumerable<ExtraHour>> GetAll()
         {
-            return await _repository.GetAllAsync();
+            return await _repository.GetAll();
         }
 
         public async Task<ExtraHour> GetById(int id)
         {
-            return await _repository.GetByIdAsync(id);
+            return await _repository.GetById(id);
         }
 
         public async Task Add(ExtraHour extraHour)
         {
             //Validar Cantidad de horas en el mes
             var canRegister = await ValidateMonthHours(extraHour.IdEmployee, extraHour.QuantityHours);
-            await _repository.AddAsync(extraHour);
+            await _repository.Add(extraHour);
         }
 
         public async Task Update(ExtraHour extraHour)
         {
-            await _repository.UpdateAsync(extraHour);
+            await _repository.Update(extraHour);
         }
 
         public async Task Delete(int id)
         {
-            await _repository.DeleteAsync(id);
+            await _repository.Delete(id);
         }
 
         public Task ApproveRequest()
@@ -47,7 +47,6 @@ namespace SisteCredito.ManagementAPI.Application.Services
 
         private async Task<bool> ValidateMonthHours(int idEmployee, int quantityHour)
         {
-            await _repository.AddAsync(extraHour);
             //Se valida que la cantidad de horas no supere las 40 mensuales
             return true;
         }
